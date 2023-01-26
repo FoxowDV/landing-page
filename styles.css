@@ -1,3 +1,4 @@
+/* GLOBALS */
 
 body {
     margin: 0;
@@ -12,17 +13,29 @@ body {
 
 }
 
-h1 {
+h1,
+h2,
+h4 {
     margin: 0;
+}
+
+h1 {
     font-weight: 900;
     font-size: 48px;
     color: #f9faf8;
 }
 
 h3 {
-    margin: 0;
     font-size: 36px;
     font-weight: 900;
+}
+
+h4 {
+    padding: 0;
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: 400;
+
 }
 
 img {
@@ -50,24 +63,15 @@ p {
     font-weight: 400;
 }
 
-.hero {
-    margin: 0;
-    padding: 150px 250px;
-    display: flex;
-    gap: 48px;
-}
-
-
-.hero-img {
-    max-width: 50%;
-}
-
 a {
     text-decoration: none;
     font-size: 18px;
     color: #e5e7eb;
     font-weight: 400;
 }
+
+
+/* HEADER */
 
 .logo {
     font-size: 24px;
@@ -86,14 +90,28 @@ a {
     gap: 24px;
 }
 
-.main {
+
+/* HERO */
+
+.hero {
+    margin: 0;
+    padding: 150px 250px;
+    display: flex;
+    gap: 48px;
 }
+
+.hero-img {
+    max-width: 50%;
+}
+
+/* INFORMATION */
+
 
 .information {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 64px 250px;
+    padding: 64px 300px;
 
 }
 
@@ -106,14 +124,25 @@ a {
     gap: 20px;
 }
 
+.info-item > img {
+    margin-top: 64px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #3882f6;
+    border-radius: 12px;
+
+}
+
 .info-item > p {
     color: #1f2937;
     text-align: center;
 }
 
+/* QUOTE*/
+
 .quote {
     margin: 0;
-    padding: 150px 250px;
+    padding: 150px 350px;
     background-color: #e5e7eb;
 
 }
@@ -129,3 +158,33 @@ a {
     color: #1f1f1f;
     text-align: end;
 }
+
+/* SIGN UP */
+
+.sign-up {
+    margin: 64px 250px;
+    padding: 64px 50px;
+    border-radius: 12px;
+    background-color: #3882f6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sign-up > div > h4 {
+    font-weight: 900;
+}
+
+.sign-up > div > button {
+    border: 2px solid #f9faf8;
+}
+
+/* FOOTER */
+
+.footer {
+    margin: 0;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
